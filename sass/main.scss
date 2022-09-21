@@ -1,0 +1,23 @@
+//Variables
+$fondo_oscuro: #343434;
+$color_letras: #FFFFFF;
+$color_h3: #87F787;
+
+
+body{
+    background: $fondo_oscuro;
+    color: $color_letras;
+}
+
+.container{
+    //Anidaciones
+    div{
+        border: 1px solid $color_letras;
+        border-radius: 8px;
+        padding: 5px;
+        
+        h3{
+            color: $color_h3;
+        }
+    }
+}

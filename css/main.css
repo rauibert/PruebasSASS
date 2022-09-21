@@ -1,0 +1,15 @@
+body {
+  background: #343434;
+  color: #FFFFFF;
+}
+
+.container div {
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  padding: 5px;
+}
+.container div h3 {
+  color: #87F787;
+}
+
+/*# sourceMappingURL=main.css.map */
