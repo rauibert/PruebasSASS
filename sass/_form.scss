@@ -20,6 +20,7 @@ form{
         border: solid 1px $color_borde_form;
         border-bottom: none;        
         transition: all 0.3s ease-in-out;
+        border-radius: 4px;
     }
 
     input:hover {
@@ -43,6 +44,7 @@ form{
         font-size: 0.9em;  
         border: solid 1px $color_borde_form;        
         transition: all 0.3s ease-in-out;
+        border-radius: 4px;
       }
       
       textarea:hover {
@@ -65,6 +67,7 @@ form{
         cursor: pointer;        
         border: solid 1px $color_borde_form;
         border-top: none;
+        border-radius: 4px;
       }
       
       #submit:hover {

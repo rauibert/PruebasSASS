@@ -8,6 +8,7 @@ $tipo_letra: 'Montserrat', sans-serif;
 $fondo_oscuro: #04180bc0;
 $color_letras: #ffffff;
 $color_h3: #65f565;
+$color_fondo: #073d0f71;
 
 
 body{
@@ -30,4 +31,17 @@ body{
             color: $color_h3;
         }
     }  
+}
+
+@mixin card_box($fondo_caja){
+    background: $fondo_caja;
+    border: 2px solid darkgreen;
+    box-shadow: 0px 0px 9px black;
+    color: $color_letras;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.box{
+    @include card_box($color_fondo);
 }
