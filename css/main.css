@@ -112,6 +112,7 @@ body {
 
 .circle1 {
   animation-name: animacion1;
+  background-color: rgba(30, 240, 104, 0.9);
 }
 @keyframes animacion1 {
   0% {
@@ -124,6 +125,7 @@ body {
 
 .circle2 {
   animation-name: animacion2;
+  background-color: rgba(30, 240, 104, 0.6);
 }
 @keyframes animacion2 {
   0% {
@@ -136,6 +138,7 @@ body {
 
 .circle3 {
   animation-name: animacion3;
+  background-color: rgba(30, 240, 104, 0.3);
 }
 @keyframes animacion3 {
   0% {

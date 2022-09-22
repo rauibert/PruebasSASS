@@ -9,6 +9,10 @@ $fondo_oscuro: #04180bc0;
 $color_letras: #ffffff;
 $color_h3: #65f565;
 $color_fondo: #073d0f71;
+$color1: rgba(30, 240, 104, 0.9);
+$color2: rgba(30, 240, 104, 0.6);
+$color3: rgba(30, 240, 104, 0.3);
+
 
 
 body{
@@ -68,7 +72,7 @@ body{
         
         @keyframes animacion#{$iterator}{
             0%{
-                transform: translate(-50% * $iterator);
+                transform: translate(-50% * $iterator);               
             }
 
             100%{
@@ -76,6 +80,13 @@ body{
             }
         }
 
+        @if($iterator == 1){
+            background-color: $color1;  
+        }@else if($iterator == 2){
+            background-color: $color2;  
+        }@else{
+            background-color: $color3;  
+        }
     }
 
 }
