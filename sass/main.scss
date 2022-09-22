@@ -66,17 +66,23 @@ body{
     animation: 2s alternate infinite;
 }
 
+@function traslacion($porcentaje, $iterator){
+    $traslacion: $porcentaje * $iterator;
+    @return $traslacion;
+}
+
+
 @for $iterator from 1 through 3{   
     .circle#{$iterator}{
         animation-name: animacion#{$iterator};
         
         @keyframes animacion#{$iterator}{
             0%{
-                transform: translate(-50% * $iterator);               
+                transform: translate(traslacion(-50%, $iterator));               
             }
 
             100%{
-                transform: translate(50% * $iterator);
+                transform: translate(traslacion(50%, $iterator));
             }
         }
 
@@ -90,5 +96,7 @@ body{
     }
 
 }
+
+
 
 
