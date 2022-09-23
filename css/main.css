@@ -188,4 +188,24 @@ body {
   }
 }
 
+.mensaje, .mensaje_error, .mensaje_exito {
+  font-size: 1.3rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px black;
+  padding: 15px;
+  color: #ffffff;
+  margin: 20px 0px 10px 0px;
+}
+
+.mensaje_exito {
+  background: rgba(30, 240, 104, 0.3);
+  border-color: rgba(4, 24, 11, 0.7529411765);
+}
+
+.mensaje_error {
+  background: rgb(235, 80, 80);
+  border-color: #e62222;
+}
+
 /*# sourceMappingURL=main.css.map */

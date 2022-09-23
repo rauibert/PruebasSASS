@@ -13,6 +13,8 @@ $color_fondo: linear-gradient(180deg, #04290a 0%,  #13641fef 100%);
 $color1: rgba(30, 240, 104, 0.9);
 $color2: rgba(30, 240, 104, 0.6);
 $color3: rgba(30, 240, 104, 0.3);
+$fondo_exito: $color3;
+$fondo_error: rgb(235, 80, 80);
 
 *{
     margin: 0;
@@ -109,13 +111,13 @@ body{
     margin: 10px 40% ;
     animation: 2s alternate infinite;
 }
-
+//Uso de funciones 
 @function traslacion($porcentaje, $iterator){
     $traslacion: $porcentaje * $iterator;
     @return $traslacion;
 }
 
-
+//Uso de for
 @for $iterator from 1 through 3{   
     .circle#{$iterator}{
         animation-name: animacion#{$iterator};
@@ -141,6 +143,29 @@ body{
 
 }
 
+//Herencia
+
+.mensaje{
+    font-size: 1.3rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px black;
+    padding: 15px;
+    color: #ffffff;
+    margin: 20px 0px 10px 0px;
+}
+
+.mensaje_exito{
+    @extend .mensaje;
+    background: $fondo_exito;
+    border-color: $fondo_oscuro;
+}
+
+.mensaje_error{
+    @extend .mensaje;
+    background: $fondo_error;
+    border-color: darken($fondo_error, 10); 
+}
 
 
 
