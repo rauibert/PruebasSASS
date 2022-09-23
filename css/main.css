@@ -208,4 +208,15 @@ body {
   border-color: #e62222;
 }
 
+.footer {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(180deg, #04290a 0%, rgba(19, 100, 31, 0.937254902) 100%);
+  font-weight: 800;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
